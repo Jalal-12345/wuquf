@@ -25,10 +25,10 @@ body {
 /* Header */
 
 header{
-      position: relative;
-    top: 0;
-    right: 0;
-    z-index: 99;
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 99;
   background: transparent;
 }
 
@@ -51,10 +51,10 @@ header{
   align-items: center;
 }
 
-.Home img {
+.Home .img img {
   width: 80%;
   height: 100%;
-  margin: auto;
+  margin-bottom: 70px ;
 }
 
 .text-Home{

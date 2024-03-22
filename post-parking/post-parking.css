@@ -4,9 +4,7 @@
   box-sizing: border-box;
 }
 
-header{
-  background: linear-gradient(#8779a4, #9e6b8b);
-}
+
 
 .post-parking{
   display: flex;

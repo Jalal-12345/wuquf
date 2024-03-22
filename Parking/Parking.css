@@ -4,32 +4,30 @@
   box-sizing: border-box;
 }
 
-header{
-  background: linear-gradient(#9e6b8b,#8779a4);
-}
 
 body{
   overflow-x: hidden;
 }
 
 .continer-parking{
+  width: 100%;
   height: calc(100vh-56);
+  margin-top: 10px;
   display: flex;
   justify-content: center;
-  width: 100%;
-  margin-top: 10px;
+  align-items: center;
 }
 
 .continer-parking .parking{
+  width: fit-content;
+  height: 100%;
   box-shadow: 0px 0px 25px 5px rgba(1 1 1/15%);
   display: flex;
   padding: 10px 20px;
   flex-wrap: wrap;
   margin: 10px 5px;
   border-radius: 20px;
-  width: 60%;
-  height: calc(80vh);
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 .continer-parking .parking table{
@@ -61,7 +59,8 @@ body{
 
 .info-parking{
   width: 30%;
-  padding: 20px 20px;
+  height: 93vh;
+  padding: 0px 20px;
   box-shadow: 0px 0px 25px 5px rgba(1 1 1/15%);
   border-radius: 20px;
   margin-left: 20px;

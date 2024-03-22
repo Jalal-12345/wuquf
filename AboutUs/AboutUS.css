@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-header{
-  background: linear-gradient(#8779a4, #9e6b8b);
-}
 
 body{
   overflow-x: hidden;
@@ -111,7 +108,6 @@ body{
   text-align: right;
   justify-content: center;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 .virson .project-virson-card .card-virson{
@@ -145,13 +141,9 @@ footer h1 {
   align-items:center ;
 }
 
-footer h1  strong{
-  font-size: 60px;
-  margin-right: 20px;
-}
 
 footer h1  img{
- width: 80px;
+ width: 200px;
  height: 100%;
 }
 

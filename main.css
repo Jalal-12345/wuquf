@@ -8,6 +8,16 @@
 
 
 /* Headers */
+header {
+  width: 100vw;
+  background: linear-gradient(90deg, #9e6b8b, #8779a4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 60px;
+}
+
+
 a {
   text-decoration: none;
 }
@@ -43,6 +53,11 @@ img {
   align-items: center;
 }
 
+.titleWebsite img {
+  width: 100px;
+  height: 50px;
+}
+
 .navbar {
   display: flex;
   width: 100%;
@@ -71,13 +86,6 @@ img {
   cursor: pointer;
 }
 
-header {
-  width: 100vw;
-  background: linear-gradient(90deg, #9e6b8b, #8779a4);
-  display: flex;
-  justify-content: center;
-  padding: 10px 60px;
-}
 
 /* Menu Mobile */
 
