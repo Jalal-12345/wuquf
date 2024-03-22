@@ -28,6 +28,10 @@ body {
 /* Header */
 
 header{
+      position: relative;
+    top: 0;
+    right: 0;
+    z-index: 99;
   background: transparent;
 }
 
