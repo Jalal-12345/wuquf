@@ -8,7 +8,7 @@ document.querySelectorAll(".primary-Header").forEach(item=> {
     <div style="display: flex; flex-direction: row-reverse;">
       <a href="../Home/Tuwaiq1.html" class="titleWebsite"><img src="../Image/Logo.png" alt=""></a>
         <ul class="nav-links">
-          <li><a href="#">موقف</a></li>
+          <li><a href="../post-parking/post-parking.html">موقف</a></li>
           <li style="display: flex; flex-direction: column;  align-items: center;" onmousemove="DrowDawnMove();" onmouseout="DrowDawnOut()"><a href="#" class="Maps">الخريطة</a> 
             <div class="DrowDawnMaps">
               <ul>

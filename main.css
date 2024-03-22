@@ -80,6 +80,12 @@ img {
 .nav-links li a {
   color: #fff;
   font-size: 20px;
+  transition: 0.9s;
+}
+
+.nav-links li a:hover{
+  font-weight: 500;
+  letter-spacing: 3px;
 }
 
 #menu {
