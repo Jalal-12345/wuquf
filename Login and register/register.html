@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- // font awsome // -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="LoginAndRegister.css">
+  <link rel="stylesheet" href="../main.css">
+  <!-- // CSS // -->
+
+  <!-- Font google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- // Font google // -->
+  <title>Document</title>
+
+</head>
+<body>
+   <div class="Form-continer">
+    <!-- title From -->
+      <div class="title-From">
+        <h1>إنشاء حساب</h1>
+        <p>مرحبًا . قم بإدخال بياناتك  لإنشاء حسابك  </p>
+      </div>
+
+          <!-- // title Form // -->
+
+ <!-- INPUT FORM -->
+      <form class="Form" action="../Home/Tuwaiq1.html">
+        <div class="input">
+          <label for="name">الإسم الكامل</label>
+          <div class="input-group">
+            <input type="text" id="name" placeholder="الإسم" autocomplete="off" required>
+            <div class="icon">  
+              <i class="fa-regular fa-user"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="input">
+          <label for="number">رقم الجوال</label>
+          <div class="input-group">
+            <input type="number" id="number" placeholder="966 XXX XXX XX" autocomplete="off" required>
+            <div class="icon">  
+              <i class="fa-solid fa-phone"></i>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="input">
+          <label for="NationalityRegister">الجنسية</label>
+          <div class="input-group">
+            <input type="text" id="NationalityRegister" placeholder="مثلا سعودي " autocomplete="off" required>
+            <div class="icon">  
+              <i class="fa-solid fa-location-dot"></i>            
+            </div>
+          </div>
+        </div>
+
+        <div class="input">
+          <label for="CityLogin">منطقة</label>
+          <div class="input-group">
+            <input type="text" id="CityLogin" placeholder="مثلا الرياض " autocomplete="off" required>
+            <div class="icon">  
+              <i class="fa-solid fa-location-dot"></i>            
+            </div>
+          </div>
+        </div>
+
+      <div class="input">
+            <label for="email"> البريد الإلكتروني</label>
+            <div class="input-group">
+              <input type="email" id="email" placeholder="pnu.edu.sa" autocomplete="off" required>
+              <div class="icon">
+                <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              </div>
+            </div>
+      </div>
+
+          <div class="input">
+            <label for="password">كلمة المرور</label>
+            <div class="input-group">
+              <input type="password" id="password" placeholder="************" autocomplete="off" required>
+              <div class="icon">  
+                <i class="fa-solid fa-lock" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="checkbox">
+            <label for="checkbox">تذكرني</label>
+            <input type="checkbox" id="checkbox">
+          </div>
+
+          <div class="input">
+            <label>الجنس</label>
+            <div class="option">
+              <div class="radio">
+                <label for="man">ذكر</label>
+                <input  type="radio" id="man" name="radio" required>
+              </div>
+
+              <div class="radio">
+                <label for="women">أنثى</label>
+                <input  type="radio" id="women" name="radio" required value="أنثى">
+              </div>
+            </div>
+          </div>
+
+          <button id="submit" onclick="register()">إنشاء حساب</button>
+      </form>
+
+      <!-- // INPUT FORM // -->
+
+
+      <!-- FOOTER FORM -->
+      <h4>هل لديك حساب؟<a href="./Login.html">تسجيل الدخول</a></h4>
+
+            <!-- // FOOTER FORM // -->
+
+   </div>
+
+     <!-- // Form  //-->
+
+     <div class="img-login">
+      <img src="../Image/Login.png" alt="">
+     </div>
+
+     <script src="../main.js"></script>
+</body>
+</html>

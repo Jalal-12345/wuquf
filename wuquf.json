@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "aljamiea" : "الجامعة الأميرة نورة",
+    "Coordinates" : {"lat": 13232 , "long": 433},
+    "info-almawaqif": [
+      {
+        "namePark": "أكاديمية أبل",
+        "Coordinates" : {"lat": 13232 , "long": 433},
+        "park": [
+          
+        ]
+      }
+    ]
+  }
+]

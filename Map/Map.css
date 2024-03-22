@@ -1,0 +1,141 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;  
+}
+
+body{
+  overflow: hidden;
+}
+
+.MapsContiner{
+  height: 70vh;
+  width: 80%;
+  display: flex;
+  padding: 15px 20px;
+  box-shadow: 0 0px 9px 5px rgba(1 1 1/8%);
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+
+#Maps{
+  width: 75%;
+   height: 100%; 
+   border-radius: 15px;
+}
+
+.FormMaps{
+  margin: 0px 10px;
+}
+
+.SearchMaps{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  position: relative;
+}
+
+ .input-group input {
+  outline: 0;
+  width: 100%;
+  padding: 10px;
+  padding-right: 60px;
+  border-radius: 10px;
+  border: none;
+  text-align: right;
+  background: #FBFBFB;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8779a4;
+}
+
+.input-group input:focus {
+  border: solid 2px;
+}
+
+.saved{
+  padding: 10px 15px;
+  background: #FBFBFB;
+  border-radius: 10px;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.saved i {
+  color: #8779a4;
+}
+
+.resultMaps{
+  height: 90%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.resultMaps ul {
+  width: 100%;
+  height: 100%;
+  margin-left: 2px;
+}
+
+.resultMaps ul li{
+  width: 90%;
+  text-align: left;
+  box-shadow: 1px 0px 5px 1px rgba(1 1 1/10%);
+  margin: 20px auto;
+  padding: 10px ;
+  border-radius: 10px;
+}
+
+.resultMaps ul li a{
+  display: flex;
+  align-items: center;
+  color: #222;
+  justify-content: right;
+}
+
+.resultMaps ul li a strong{
+  font-weight: 400;
+}
+
+.resultMaps ul li a img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+
+/* response */
+
+@media (max-width:550px){
+  body{
+    overflow: auto;
+  }
+  .MapsContiner{
+    flex-direction: column;
+  }
+
+  .FormMaps{
+    height: 100%;
+  }
+
+  .resultMaps{
+    height: 90%;
+    overflow-y: scroll;
+  }
+
+}
+

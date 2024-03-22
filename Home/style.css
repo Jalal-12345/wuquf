@@ -1,0 +1,115 @@
+body {
+    width: 100%;
+    height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* background-image: url("../Image/image.png"); /* //parkivia.ancorathemes.com/wp-content/uploads/2018/04/s1.jpg */
+    /* background-repeat: no-repeat;
+    background-size: contain; */ 
+    overflow: hidden;
+  
+  }
+
+  html{
+    background: linear-gradient(#8779a4,#9e6b8b);
+  }
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tajawal", sans-serif;
+
+}
+/* Header */
+
+header{
+  background: transparent;
+}
+
+/* Section */
+.Home{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+
+
+.Home .img{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home img {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.text-Home{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-Home h1{
+  font-size: 40px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+.text-Home a {
+  margin-top: 30px;
+  background: #fff;
+  color: #8779a4;
+  padding: 10px 40px;
+  border-radius: 20px;
+  width: 250px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media (max-width:750px) {
+  .Home{
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+
+  .text-Home{
+    width: 100%;
+    text-align: left;
+  }
+
+  .text-Home h1{
+    width: 100%;
+    text-align: right;
+    font-size: 30px;
+  }
+
+  .text-Home a {
+    font-size: 10px;
+  }
+
+  .Home .img{
+    width: 100%;
+  }
+
+  .Home .img img{
+    width: 100%;
+  }
+
+}
+
+

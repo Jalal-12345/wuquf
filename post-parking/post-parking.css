@@ -1,0 +1,108 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+header{
+  background: linear-gradient(#8779a4, #9e6b8b);
+}
+
+.post-parking{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin-top: 20px;
+}
+
+
+.post-parking .img-post-parking{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.post-parking .img-post-parking img{
+  width: 70%;
+  height: 100%;
+}
+
+.post-parking .info-post-parking{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.post-parking .info-post-parking .Form-continer{
+  box-shadow: 0 0 5px 5px rgba(1 1 1/8%);
+  padding: 20px 40px;
+  border-radius: 10px;
+  width: 60%; 
+}
+
+.Form-continer form .input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin: 30px 0px;
+}
+
+.Form-continer form .input label {
+  margin-bottom: 5px;
+}
+
+.Form-continer form .input input{
+  text-align: right;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  border: solid 1px #eee ;
+  box-shadow: 0 0 5px 1px rgba(1 1 1/15%);
+  outline: none;
+}
+
+.Form-continer form .input input:focus{
+  border: solid #eee;
+}
+
+
+.Form-continer form button{
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 15px;
+  border: none;
+  background-image: url("../Image/map.png");
+  cursor: pointer;
+  box-shadow: 0 0 3px 3px rgba(1 1 1/10%);
+}
+
+
+.Form-continer form button i {
+  color: #9e6b8b;
+  font-size: 20px;
+  margin-right: 7px;
+}
+
+
+
+/* response */
+
+@media (max-width: 550px) {
+  .post-parking .img-post-parking{
+    display: none;
+  }
+
+  .post-parking .info-post-parking{
+    width: 100%;
+  }
+
+
+  .post-parking .info-post-parking .Form-continer{
+    width: 80%;
+  }
+}

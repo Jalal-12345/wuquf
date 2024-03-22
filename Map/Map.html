@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Font google  -->
+    <!-- Font google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <!-- // Font google // -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="../main.css" />
+  <link rel="stylesheet" href="./Map.css" />
+  <!-- // CSS // -->
+
+  <!-- Font Awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+  <!-- // Font Awsome // -->
+  <title>document</title>
+</head>
+
+<body>
+  
+  <div class="primary-Header"></div>
+
+
+  <div class="MapsContiner">
+    <div class="Maps" id="Maps"></div>
+    <div class="FormMaps">
+
+
+      <div class="SearchMaps">
+        <div class="input-group">
+          <input type="text" id="serchMaps" placeholder="البحث">
+          <div class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      <div class="saved">
+          <i class="fa-regular fa-bookmark"></i>
+      </div>
+      </div>
+      <div class="resultMaps">
+        <ul>
+          <li><a href="#" onclick="ClickedPost(this.dataset.college)" data-college="أكاديمية طويق"><strong>أكاديمية  طويق</strong> <img src="../Image/Parking.png" alt=""></a></li>
+          <li><a href="#" onclick="ClickedPost(this.dataset.college)" data-college="أكاديمية ابل"><strong>أكاديمية ابل</strong> <img src="../Image/Parking.png" alt=""></a></li>
+
+          <li><a href="#" onclick="ClickedPost(this.dataset.college)" data-college="كلية الهندسة"><strong>كلية الهندسة</strong> <img src="../Image/Parking.png" alt=""></a></li>
+
+          <li><a href="#" onclick="ClickedPost(this.dataset.college)" data-college="كلية الفنون"><strong>كلية الفنون </strong> <img src="../Image/Parking.png" alt=""></a></li>
+
+          <li><a href="#" onclick="ClickedPost(this.dataset.college)" data-college="كلية علوم حاسب"><strong>كلية علوم حاسب</strong> <img src="../Image/Parking.png" alt=""></a></li>
+          <li><a href="#" onclick="ClickedPost(this.dataset.college)" data-college="كلية الاداب"><strong>كلية الاداب</strong> <img src="../Image/Parking.png" alt=""></a></li>
+          <li><a href="#" onclick="ClickedPost(this.dataset.college)" data-college="كلية العلوم"><strong>كلية  العلوم</strong> <img src="../Image/Parking.png" alt=""></a></li>
+
+         </ul>
+         
+      </div>
+
+    </div>
+  </div>
+  <script src="../main.js"></script>
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL0HgoukvI09RRSjRloDHRFzEI1d8zaV8&loading=async&callback=initMap"></script>
+  <script src="./Map.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
