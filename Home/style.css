@@ -12,9 +12,6 @@ body {
   }
 
   html{
-    position: relative;
-    top: 0;
-    right: 0;
     background: linear-gradient(#8779a4,#9e6b8b);
   }
 /* Global */
