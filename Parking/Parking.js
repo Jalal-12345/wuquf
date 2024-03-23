@@ -11,7 +11,7 @@ function GetUrl() {
 TitlePark.innerHTML = `
  ${GetUrl()}
 `
-document.querySelectorAll("button").forEach(item=>{
+document.querySelectorAll(" td > button").forEach(item=>{
    item.addEventListener("click",(e)=>{
     postLocation(e.target.innerText)
    })
