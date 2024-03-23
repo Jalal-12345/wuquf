@@ -8,19 +8,21 @@
 
 .post-parking{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   height: 100%;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 
 .post-parking .img-post-parking{
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   width: 50%;
   height: 100%;
+  margin: 0px 40px
+  ;
 }
 
 .post-parking .img-post-parking img{
@@ -30,9 +32,10 @@
 
 .post-parking .info-post-parking{
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   width: 50%;
+  margin:  0px 40px;
 }
 
 .post-parking .info-post-parking .Form-continer{
