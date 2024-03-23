@@ -1,3 +1,5 @@
+
+
 /* Global */
 *{
   margin: 0;
@@ -92,6 +94,7 @@ img {
   cursor: pointer;
 }
 
+/* -- Header -- */
 
 /* Menu Mobile */
 
@@ -193,7 +196,7 @@ img {
   font-size: 15px;
 }
 
-/* -- Headers -- */
+/* -- Headers Mobile -- */
 
 /* response */
 
@@ -230,4 +233,4 @@ img {
   }
 }
 
-/* -- response */
+/* -- response -- */

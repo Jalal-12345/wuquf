@@ -1,3 +1,4 @@
+// get Google maps
 let map;
 
 async function initMap() {
@@ -27,6 +28,8 @@ async function initMap() {
 
 window.initMap = initMap;
 
+
+// post url Name park
 function ClickedPost(NamePark){
   location = `../Parking/Parking.html?NamePark=${NamePark}`
   console.log(NamePark);

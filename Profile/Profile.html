@@ -4,92 +4,127 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-      <!-- Font google  -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-      <!-- // Font google // -->
-      <!-- CSS -->
-      <link rel="stylesheet" href="../main.css">
-      <link rel="stylesheet" href="./Profile.css"/>
-      <!-- // CSS // -->
-  
-      <!-- Font Awsome -->
-      <link
+    <!-- Font google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- // Font google // -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="./Profile.css" />
+    <!-- // CSS // -->
+
+    <!-- Font Awsome -->
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     />
     <!-- // Font Awsome // -->
   </head>
   <body>
+    <!-- Header -->
+    <div class="primary-Header"></div>
+    <!-- // Header // -->
 
-<div class="primary-Header"></div>
-
-
-<div class="continer">
-  <div class="Form-Profile">
-    
+    <!-- Continer -->
+    <div class="continer">
+      <!-- Profile -->
+      <div class="Form-Profile">
         <div class="profile">
-  
-        
           <div class="input">
             <label for="name">الإسم الكامل</label>
-            <input type="text" placeholder="سعود المطيري" id="name" value="سعود المطيري"/>
+            <input
+              type="text"
+              placeholder="سعود المطيري"
+              id="name"
+              value="سعود المطيري"
+            />
           </div>
-    
+
           <div class="input">
             <label for="Nationality">الجنسية</label>
-            <input type="text" placeholder="سعودي" id="Nationality" value="سعودي" />
+            <input
+              type="text"
+              placeholder="سعودي"
+              id="Nationality"
+              value="سعودي"
+            />
           </div>
-    
+
           <div class="input">
             <label for="City">المنطقة</label>
             <input type="text" placeholder="الرياض" id="City" value="الرياض" />
           </div>
-    
-        
-    
+
           <div class="input">
             <label for="manORwomen">الجنس</label>
-            <input type="text" id="manORwomen">
-          </div>
+            <input type="text" id="manORwomen" />
           </div>
         </div>
+      </div>
+      <!-- // Profile // -->
 
-        <div class="content">
+      <!-- content -->
+      <div class="content">
         <div class="content-form">
-            <div class="img-profile">
-              <img src="../Image/Profile-img.png" alt="">
-            </div>
-          
-            <ul>
-              <li class="active"><a href="#"><strong>تعديل الملف الشخصي</strong><i class="fa-regular fa-user"></i></a></li>
-              <li><a href="#"><strong>الامان</strong><i class="fa-solid fa-lock"></i></a></li>
-              <li><a href="#"><strong>مساعد</strong><i class="fa-solid fa-square-check"></i></a></li>
-              <li><a href="#"><strong>تسجيل الخروج</strong><i class="fa-solid fa-right-from-bracket"></i></a></li>
-            </ul>
-        </div>
-        </div>
-</div>
+          <div class="img-profile">
+            <img src="../Image/Profile-img.png" alt="" />
+          </div>
 
+          <ul>
+            <li class="active">
+              <a href="#"
+                ><strong>تعديل الملف الشخصي</strong
+                ><i class="fa-regular fa-user"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><strong>الامان</strong><i class="fa-solid fa-lock"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><strong>مساعد</strong><i class="fa-solid fa-square-check"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><strong>تسجيل الخروج</strong
+                ><i class="fa-solid fa-right-from-bracket"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- // content // -->
+    </div>
 
+    <!-- // Continer // -->
+
+    <!-- script -->
     <script src="../main.js"></script>
     <script>
       let Name = document.getElementById("name");
       let Nationality = document.getElementById("Nationality");
       let City = document.getElementById("City");
-      let manORwomen = document.getElementById("manORwomen")
+      let manORwomen = document.getElementById("manORwomen");
 
-      function ShowInfo(){
+      function ShowInfo() {
         let user = JSON.parse(localStorage.getItem("info-person"));
         console.log(user);
-        Name.value = user.name
-        Nationality.value = user.NationalityRegister
-        City.value = user.City
-        manORwomen.value = user.Checked
+        Name.value = user.name;
+        Nationality.value = user.NationalityRegister;
+        City.value = user.City;
+        manORwomen.value = user.Checked;
       }
 
-      ShowInfo()
+      ShowInfo();
     </script>
+        <!-- // script // -->
+
   </body>
 </html>

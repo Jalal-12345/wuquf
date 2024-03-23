@@ -1,11 +1,12 @@
+/* Global */
+
 *{
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
 }
 
-
-
+/* post parkin */
 .post-parking{
   display: flex;
   justify-content: space-evenly;
@@ -14,6 +15,7 @@
   margin-top: 40px;
 }
 
+/* post parkin img */
 
 .post-parking .img-post-parking{
   display: flex;
@@ -29,6 +31,10 @@
   width: 70%;
   height: 100%;
 }
+
+/* -- post parkin img -- */
+
+/* post parkin info */
 
 .post-parking .info-post-parking{
   display: flex;
@@ -89,6 +95,11 @@
   margin-right: 7px;
 }
 
+/* -- post parkin info -- */
+
+/* -- post parkin -- */
+
+
 
 
 /* response */
@@ -107,3 +118,5 @@
     width: 80%;
   }
 }
+
+/* -- response -- */

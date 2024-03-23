@@ -1,3 +1,5 @@
+
+/* Global */
 *{
   margin: 0;
   padding: 0;
@@ -9,6 +11,8 @@ body{
   overflow-x: hidden;
 }
 
+
+/* Continer */
 .continer-parking{
   width: 100%;
   height: calc(100vh-56);
@@ -17,6 +21,8 @@ body{
   justify-content: center;
   align-items: center;
 }
+
+/* continer Parking */
 
 .continer-parking .parking{
   width: fit-content;
@@ -57,6 +63,9 @@ body{
   width: 80px;
 }
 
+/* -- continer Parking -- */
+
+/* Info Parking */
 .info-parking{
   width: 30%;
   height: 90vh;
@@ -95,6 +104,21 @@ body{
   color: #9e6b8b;
 }
 
+.img-Star{
+  width: 100%;
+}
+
+.img-Star img{
+  width: 100%;
+  height: 100%  ;
+}
+
+/* -- Info Parking  --*/
+
+
+/* -- Continer -- */
+
+
 /* response  */
 
 @media (max-width: 550px){
@@ -117,3 +141,5 @@ body{
     margin: 20px auto;
   }
 }
+
+/* -- response --  */

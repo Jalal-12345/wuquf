@@ -1,3 +1,5 @@
+/* Global */
+
 *{
   margin: 0;
   padding: 0px;
@@ -8,6 +10,8 @@
 body{
   overflow-x: hidden;
 }
+
+/* Section About us */
 
 .AboutUS{
   display: flex;
@@ -50,6 +54,11 @@ body{
   font-size: 20px;
 }
 
+/*  -- Section About us -- */
+
+
+/*  Section Goals us */
+
 
 .Goals{
   background: linear-gradient(#8779a4,#9e6b8b);
@@ -75,7 +84,6 @@ body{
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
-  align-items: center;
 }
 
 
@@ -93,17 +101,23 @@ body{
   transform: scale(1.2);
 }
 
+/* -- Section Goals us -- */
+
+
+/*  Section virson us  */
 
 .virson{
-  padding: 20px;
+  width: 100%;
 }
 
 
 .virson .project-virson{
-  padding: 60px;
+  padding: 60px 0px;
+  width: 100%;
 }
 
 .virson .project-virson-card{
+  width: 100%;
   display: flex;
   text-align: right;
   justify-content: center;
@@ -111,15 +125,16 @@ body{
 }
 
 .virson .project-virson-card .card-virson{
-  width: 300px;
+  width: 400px;
   margin: 15px;
   transition: 0.5s;
   padding: 10px;
   border-radius: 10px;
+  font-size: 13px;
 }
 
 .virson .project-virson-card .card-virson:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
   box-shadow: 0 0 1px 1px rgba(1 1 1/8%);
 }
 
@@ -131,22 +146,17 @@ body{
   margin-bottom: 10px;
 }
 
+/* -- Section virson us -- */
+
+/* Footer */
 
 footer{
   background: linear-gradient(#8779a4,#9e6b8b);
-  padding: 40px;
+  padding: 80px 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-
-
-
-footer h1 img{
- width: 200px;
- height: 100%;
 }
 
 
@@ -178,6 +188,51 @@ footer h1 img{
   margin: 0px 5px;
   cursor: pointer;
  }
+
+ footer h3{
+  margin-top: 80px;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* -- Footer --*/
+
+
+/* response */
+
+@media (max-width: 850px){
+  .AboutUS{
+    flex-direction: column;
+  }
+  .AboutUS div{
+    width: 100%;
+  }
+
+  .AboutUS .info-About h1{
+    font-size: 40px;
+  }
+
+  .Goals .title-goal{
+    font-size: 40px;
+  }
+
+  footer{
+    padding: 20px 20px;
+  }
+
+  .project-footer{
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .card-footer{
+    margin: 20px auto;
+  }
+
+  footer h3{
+    text-align: center;
+  }
+}
 
 
 
