@@ -41,17 +41,17 @@ body{
 
 
 .AboutUS .info-About h1 {
+  font-size: 90px;
+  margin-bottom: 30px;
   background: linear-gradient(#8779a4, #9e6b8b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 90px;
-  margin-bottom: 30px;
 }
 
 
 .AboutUS .info-About p{
-  font-weight: 500;
   font-size: 20px;
+  font-weight: 500;
 }
 
 /*  -- Section About us -- */
@@ -61,10 +61,10 @@ body{
 
 
 .Goals{
-  background: linear-gradient(#8779a4,#9e6b8b);
   display: flex;
   justify-content: center;
   padding: 20px;
+  background: linear-gradient(#8779a4,#9e6b8b);
 }
 
 .project-goals{
@@ -72,26 +72,26 @@ body{
 }
 
 .Goals .title-goal{
-  color: #fff;
   text-align: center;
-  margin-bottom: 50px;
+  color: #fff;
   font-size: 60px;
+  margin-bottom: 50px;
 }
 
 
 .Goals .priject-card-goals{
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: center;
 }
 
 
 .Goals .priject-card-goals .card{
+  width: 300px;
   background: #fff;
   margin: 15px;
   padding: 30px;
-  width: 300px;
   text-align: right;
   border-radius: 20px;
   transition: 0.5s;
@@ -112,25 +112,25 @@ body{
 
 
 .virson .project-virson{
-  padding: 60px 0px;
   width: 100%;
+  padding: 60px 0px;
 }
 
 .virson .project-virson-card{
   width: 100%;
   display: flex;
-  text-align: right;
   justify-content: center;
   flex-wrap: wrap;
+  text-align: right;
 }
 
 .virson .project-virson-card .card-virson{
   width: 400px;
   margin: 15px;
-  transition: 0.5s;
   padding: 10px;
-  border-radius: 10px;
   font-size: 13px;
+  border-radius: 10px;
+  transition: 0.5s;
 }
 
 .virson .project-virson-card .card-virson:hover{
@@ -139,11 +139,11 @@ body{
 }
 
 .virson .project-virson-card .card-virson h1 {
+  font-weight: 400;
+  margin-bottom: 10px;
   background: linear-gradient(#8779a4, #9e6b8b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 400;
-  margin-bottom: 10px;
 }
 
 /* -- Section virson us -- */
@@ -151,21 +151,21 @@ body{
 /* Footer */
 
 footer{
-  background: linear-gradient(#8779a4,#9e6b8b);
-  padding: 80px 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 80px 40px;
+  background: linear-gradient(#8779a4,#9e6b8b);
 }
 
 
 .project-footer{
-  margin-top: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-top: 80px;
 }
 
 .project-footer .card-footer{

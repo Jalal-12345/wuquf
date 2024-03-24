@@ -12,13 +12,12 @@
 /* Headers */
 header {
   width: 100vw;
-  background: linear-gradient(90deg, #9e6b8b, #8779a4);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 60px;
+  background: linear-gradient(90deg, #9e6b8b, #8779a4);
 }
-
 
 a {
   text-decoration: none;
@@ -34,7 +33,7 @@ ul {
   align-items: center;
 }
 
-img {
+.right-Header img {
   width: 40px;
   height: 40px;
 }
@@ -45,14 +44,12 @@ img {
   font-size: 25px;
 }
 
-
-
 .titleWebsite {
-  color: #fff;
-  font-size: 20px;
-  margin-left: 40px;
   display: flex;
   align-items: center;
+  font-size: 20px;
+  margin-left: 40px;
+  color: #fff;
 }
 
 .titleWebsite img {
@@ -61,11 +58,11 @@ img {
 }
 
 .navbar {
-  display: flex;
   width: 100%;
+  display: flex;
   justify-content: space-around;
-  flex-direction: row-reverse;
   align-items: center;
+  flex-direction: row-reverse;
   padding: 20px;
   color: whitesmoke;
 }
@@ -105,9 +102,9 @@ img {
 }
 
 .MENU-Mobile {
-  background: #fff;
   width: 300px;
   height: 100%;
+  background: #fff;
   position: fixed;
   top: 0;
   right: 0;
@@ -115,8 +112,8 @@ img {
   display: flex;
   transform: translateX(150%);
   transition: 0.5s;
-  box-shadow: 0px 0px 25px 15px rgba(1 1 1/15%);
   padding: 0px;
+  box-shadow: 0px 0px 25px 15px rgba(1 1 1/15%);
 }
 
 .open {
@@ -129,11 +126,11 @@ img {
 }
 
 .navbar-Mobile h1 {
+  font-size: 50px;
+  text-align: center;
   background: linear-gradient(#8779a4, #9e6b8b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 50px;
-  text-align: center;
 }
 
 .navbar-Mobile ul {
@@ -142,8 +139,8 @@ img {
 }
 
 .navbar-Mobile ul li {
-  margin: 30px 0px;
   width: 100%;
+  margin: 30px 0px;
   padding: 10px 20px;
   border-bottom: solid #9e6b8b;
   text-align: end;
@@ -167,22 +164,23 @@ img {
   width: 200px;
   position: absolute;
   display: none;
+  margin-top: 23px;
   padding: 10px;
   border-radius: 10px;
   background: #fff;
-  margin-top: 23px;
   box-shadow: 0px 0px 25px 15px rgba(1 1 1/15%);
 }
 
 .DrowDawnMaps ul {
+  display: flex;
   flex-direction: column;
 }
 
 .DrowDawnMaps ul li {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   margin: 5px 0;
   padding: 3px;
 }
@@ -211,12 +209,11 @@ img {
     left: 30px;
   }
   .nav-links {
-    flex-direction: column;
     width: 100%;
     height: 100vh;
     justify-content: center;
+    flex-direction: column;
     background-color: #484872;
-    /* margin-top: -900px; */
     display: none;
   }
   .nav-links li {

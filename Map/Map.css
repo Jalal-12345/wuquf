@@ -1,38 +1,43 @@
-*{
+/* Global */
+* {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
-body{
+body {
   overflow: hidden;
 }
 
-.MapsContiner{
-  height: 70vh;
+/* Map Continer */
+
+.MapsContiner {
   width: 80%;
+  height: 70vh;
   display: flex;
   padding: 15px 20px;
-  box-shadow: 0 0px 9px 5px rgba(1 1 1/8%);
   margin: 20px auto;
   border-radius: 20px;
+  box-shadow: 0 0px 9px 5px rgba(1 1 1/8%);
 }
 
-
-#Maps{
+/* google Maps */
+#Maps {
   width: 75%;
-   height: 100%; 
-   border-radius: 15px;
+  height: 100%;
+  border-radius: 15px;
 }
 
-.FormMaps{
+/* Form Maps */
+
+.FormMaps {
   margin: 0px 10px;
 }
 
-.SearchMaps{
+.SearchMaps {
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
+  flex-direction: row-reverse;
 }
 
 .input-group {
@@ -40,15 +45,15 @@ body{
   position: relative;
 }
 
- .input-group input {
-  outline: 0;
+.input-group input {
   width: 100%;
   padding: 10px;
   padding-right: 60px;
   border-radius: 10px;
   border: none;
   text-align: right;
-  background: #FBFBFB;
+  background: #fbfbfb;
+  outline: 0;
 }
 
 .icon {
@@ -67,9 +72,9 @@ body{
   border: solid 2px;
 }
 
-.saved{
+.saved {
   padding: 10px 15px;
-  background: #FBFBFB;
+  background: #fbfbfb;
   border-radius: 10px;
   margin: 0px 10px;
   cursor: pointer;
@@ -79,7 +84,7 @@ body{
   color: #8779a4;
 }
 
-.resultMaps{
+.resultMaps {
   height: 90%;
   overflow-y: auto;
   overflow-x: hidden;
@@ -91,23 +96,23 @@ body{
   margin-left: 2px;
 }
 
-.resultMaps ul li{
+.resultMaps ul li {
   width: 90%;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
   text-align: left;
   box-shadow: 1px 0px 5px 1px rgba(1 1 1/10%);
-  margin: 20px auto;
-  padding: 10px ;
-  border-radius: 10px;
 }
 
-.resultMaps ul li a{
+.resultMaps ul li a {
   display: flex;
+  justify-content: right;
   align-items: center;
   color: #222;
-  justify-content: right;
 }
 
-.resultMaps ul li a strong{
+.resultMaps ul li a strong {
   font-weight: 400;
 }
 
@@ -117,25 +122,26 @@ body{
   margin-left: 10px;
 }
 
+/* -- Form Maps -- */
 
 /* response */
 
-@media (max-width:550px){
-  body{
+@media (max-width: 550px) {
+  body {
     overflow: auto;
   }
-  .MapsContiner{
+  .MapsContiner {
     flex-direction: column;
   }
 
-  .FormMaps{
+  .FormMaps {
     height: 100%;
   }
 
-  .resultMaps{
+  .resultMaps {
     height: 90%;
     overflow-y: scroll;
   }
-
 }
 
+/* -- response -- */

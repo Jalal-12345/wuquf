@@ -1,6 +1,3 @@
-
-
-
 /* Global */
 * {
     margin: 0;
@@ -64,30 +61,35 @@ header{
 }
 
 .text-Home h1{
+  width: 100%;
   font-size: 40px;
   color: #fff;
-  width: 100%;
   text-align: center;
 }
 
 .text-Home a {
-  margin-top: 30px;
+  width: 250px;
   background: #fff;
   color: #8779a4;
+  margin-top: 30px;
   padding: 10px 40px;
   border-radius: 20px;
-  width: 250px;
-  text-align: center;
   font-size: 20px;
   font-weight: 700;
+  text-align: center;
 }
 
 /* -- Section -- */
 
 /* response */
 @media (max-width:750px) {
+
+  body{
+    overflow: auto;
+  }
+  
   .Home{
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 100%;
   }
 
@@ -95,12 +97,14 @@ header{
   .text-Home{
     width: 100%;
     text-align: left;
+    margin-top: 0px;
+
   }
 
   .text-Home h1{
     width: 100%;
-    text-align: right;
-    font-size: 30px;
+    text-align: center;
+    font-size: 20px;
   }
 
   .text-Home a {
@@ -109,10 +113,13 @@ header{
 
   .Home .img{
     width: 100%;
+    height: 100%;
   }
 
   .Home .img img{
     width: 100%;
+    height: 100%;
+    margin-bottom: 0px;
   }
 
 }

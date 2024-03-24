@@ -1,9 +1,29 @@
 
+const namePerson = document.getElementById("name");
+const number = document.getElementById("number");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
+const radio = document.querySelectorAll(".radio");
+const NationalityRegister = document.getElementById("NationalityRegister")
+const CityLogin = document.getElementById("CityLogin");
+let Checked;
+radio.forEach(item=>{
+  item.addEventListener("click", ()=>{
+    register(item.innerText)
+    Checked = item.innerText;
+  })
+})
+
+
+const EmailLogin = document.getElementById("Email");
+const PasswordLogin = document.getElementById("Password");
+
+
 // abbreviation Header
 
 document.querySelectorAll(".primary-Header").forEach(item=> { 
   item.innerHTML = `
-  <!-- nav bar -->
+  <!-- nav bar -->  
   <header>
     <nav class="navbar">
     <div style="display: flex; flex-direction: row-reverse;">
@@ -52,10 +72,9 @@ document.querySelectorAll(".primary-Header").forEach(item=> {
 })
 
 
+const Menue = document.querySelector(".MENU-Mobile");
 // Menue
 
-let BurgerMenue = document.querySelector(".menu-icon");
-let Menue = document.querySelector(".MENU-Mobile");
 function MENU (){
   Menue.classList.add("open")
 }
@@ -64,11 +83,10 @@ function Close (){
   Menue.classList.remove("open");
 }
 
+const DrowDawnMaps = document.querySelector(".DrowDawnMaps");
+
 
 // Drow Dawn
-
-let Maps = document.querySelector(".Maps");
-let DrowDawnMaps = document.querySelector(".DrowDawnMaps");
 
 function DrowDawnMove(){
   DrowDawnMaps.style.display = "block"
@@ -80,30 +98,12 @@ function DrowDawnOut(){
 
 
 
-// Api 
 
-// fetch("../wuquf.json")
-// .then(res=>res.json())
-// .then(data=>{
-//   console.log(data)
-// })
+
+
 
 
 // register
-const namePerson = document.getElementById("name");
-const number = document.getElementById("number");
-const email = document.getElementById("email");
-const password = document.getElementById("password");
-const radio = document.querySelectorAll(".radio");
-let Checked;
-radio.forEach(item=>{
-  item.addEventListener("click", ()=>{
-    register(item.innerText)
-    Checked = item.innerText;
-  })
-})
-const NationalityRegister = document.getElementById("NationalityRegister")
-const CityLogin = document.getElementById("CityLogin");
 function   register() {
   const info = {
     name:namePerson.value,
@@ -113,8 +113,7 @@ function   register() {
     NationalityRegister: NationalityRegister.value,
     City:CityLogin.value,
     Checked,
-  }
-
+}
 
 const info_json = JSON.stringify(info);
  localStorage.setItem("info-person" , info_json)
@@ -122,11 +121,6 @@ const info_json = JSON.stringify(info);
 }
 
 // Login
-
-
-const EmailLogin = document.getElementById("Email");
-const PasswordLogin = document.getElementById("Password");
-
 
 function Login(){
    const user = JSON.parse(localStorage.getItem("info-person"))
@@ -153,8 +147,8 @@ function ShowProfile(){
   }else{
     document.querySelector("..right-Header").innerHTML = `
     <a href="../Login and register/Login.html" class="active">تسجيل الدخول</a>
-    `
-  }
+    `}
+
 }
 
 ShowProfile();

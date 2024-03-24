@@ -12,25 +12,21 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  flex-direction: row-reverse;
   align-items: center;
+  flex-direction: row-reverse;
   overflow: hidden;
-  /* background-image: url("../Image/Login.png");
-  background-repeat: no-repeat;
-  background-size: contain; */
 }
 
 
 
 /*  Form Continer */
 .Form-continer {
-  width: 30%;
+  width: 50%;
   height: 100%;
-  padding: 50px ;
-  background: #fff;
+  padding: 50px;
   text-align: right;
   overflow: auto; 
-  width: 50%;
+  background: #fff;
   box-shadow: 0 0 25px 5px rgba(1 1 1/15%);
 }
 
@@ -40,25 +36,25 @@ body {
 }
 
 .title-From h1 {
-  font-weight: 700;
   font-size: 50px;
+  font-weight: 700;
   background: linear-gradient(#8779a4, #9e6b8b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .title-From p {
-  margin: 10px 0px;
   font-size: 20px;
   font-weight: 300;
+  margin: 10px 0px;
 }
 
 /* -- TITLE FORM -- */
 
 /* INPUT FORM */
 .input {
-  margin: 10px 0px;
   width: 100%;
+  margin: 10px 0px;
 }
 
 
@@ -70,7 +66,6 @@ body {
 }
 
 .input .input-group input {
-  outline: 0;
   width: 100%;
   padding: 10px;
   padding-right: 60px;
@@ -80,6 +75,7 @@ body {
   text-align: right;
   margin-top: 5px;
   font-size: 18px;
+  outline: 0;
 }
 
 .icon {
@@ -99,14 +95,7 @@ body {
 
 /* -- INPUT FORM -- */
 
-
-
-
-
-
-
-
-
+/* Option */
 .input .option{
   display: flex;
   justify-content: space-between;
@@ -114,21 +103,21 @@ body {
 
 .input .radio{
   display: flex;
-  box-shadow: 0px 0px 1px 1px rgba(1 1 1/15%);
-  margin: 10px 0px;
   justify-content: space-between;
   align-items: center;
+  width: 100% ;
+  margin: 10px 0px;
   padding: 10px 20px;
   border-radius: 10px;
-  width: 100% ;
-  margin:  3px 4px;
+  margin: 3px 4px;
+  box-shadow: 0px 0px 1px 1px rgba(1 1 1/15%);
 }
 
 
 .input .radio label{
+  width: 100%;
   cursor: pointer;
   text-align: center;
-  width: 100%;
 }
 
 
@@ -137,21 +126,24 @@ body {
   border: solid #8779a4 1px;
 }
 
+/* -- Option -- */
+
+
 /* FOOTER FORM  */
 
 
 #submit {
-  margin-top: 40px;
   width: 100%;
+  margin-top: 40px;
   padding: 10px 20px;
   border-radius: 20px;
   border: none;
-  background: linear-gradient(#8779a4, #9e6b8b);
   color: #fff;
   font-size: 20px;
   cursor: pointer;
+  background: linear-gradient(#8779a4, #9e6b8b);
 }
-/* FOOTER FORM */
+
 .Form-continer h4 {
   margin: 50px 0px;
   text-align: center;
@@ -173,9 +165,9 @@ body {
 .img-login{
   width: 70%;
   height: 100%;
-  background: #FDFDFD;
   display: flex;
   justify-content: center;
+  background: #FDFDFD;
 }
 
 .img-login img{
@@ -203,13 +195,9 @@ body {
     height: 100%;
     padding: 40px 40px;
   }
-
-  
   .img-login{
     display: none;
   }
-
-
 
 }
 

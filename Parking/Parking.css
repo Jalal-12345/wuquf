@@ -16,10 +16,10 @@ body{
 .continer-parking{
   width: 100%;
   height: calc(100vh-56);
-  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
 
 /* continer Parking */
@@ -27,13 +27,13 @@ body{
 .continer-parking .parking{
   width: fit-content;
   height: 90vh;
-  box-shadow: 0 0 5px 5px rgba(1 1 1/8%);
   display: flex;
-  padding: 10px 20px;
   flex-wrap: wrap;
+  padding: 10px 20px;
   margin: 10px 5px;
   border-radius: 20px;
   overflow-y: scroll;
+  box-shadow: 0 0 5px 5px rgba(1 1 1/8%);
 }
 
 .continer-parking .parking table{
@@ -43,18 +43,18 @@ body{
 
 .continer-parking .parking table td button{
   width: 80px;
-  border: solid 3px #8779a4;
   color: #8779a4;
   background: transparent;
   cursor: pointer;
   padding: 5px;
   border-radius: 10px;
   font-size: 18px;
+  border: solid 3px #8779a4;
 }
 
 .continer-parking .parking table td,th{
-  border: 1px solid #dddddd;
   padding: 10px;
+  border: 1px solid #dddddd;
 }
 
 
@@ -100,8 +100,8 @@ body{
   padding: 10px 20px;
   border-radius: 20px;
   background: transparent;
-  border: solid #8779a4 2px;
   color: #9e6b8b;
+  border: solid #8779a4 2px;
 }
 
 .img-Star{
@@ -110,7 +110,7 @@ body{
 
 .img-Star img{
   width: 100%;
-  height: 100%  ;
+  height: 100%;
 }
 
 /* -- Info Parking  --*/

@@ -15,8 +15,8 @@ body {
 .continer {
   display: flex;
   align-items: center;
-  padding: 20px 50px;
   height: calc(100vh-56);
+  padding: 20px 50px;
   margin-top: 50px;
 }
 
@@ -30,11 +30,11 @@ body {
 }
 
 .profile {
-  box-shadow: 0 0 5px 1px rgba(1 1 1/15%);
-  padding: 20px;
   width: 80%;
+  padding: 20px;
   border-radius: 10px;
   margin-bottom: 70px;
+  box-shadow: 0 0 5px 1px rgba(1 1 1/15%);
 }
 
 .input {
@@ -45,43 +45,16 @@ body {
 }
 
 .input input {
-  text-align: right;
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
   border: solid #eee 2px;
   font-size: 16px;
+  text-align: right;
 }
 
 .input label {
   margin: 5px 0px;
-}
-
-.input .option {
-  display: flex;
-  justify-content: space-between;
-}
-
-.input .radio {
-  display: flex;
-  box-shadow: 0px 0px 1px 1px rgba(1 1 1/15%);
-  margin: 10px 0px;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  border-radius: 10px;
-  width: 100%;
-  margin: 0px 4px;
-}
-
-.input .radio label {
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-.input .radio input[type="Radio"]:checked + label {
-  color: #0075ff;
 }
 
 /* -- Profile Form -- */
@@ -90,25 +63,25 @@ body {
 
 /* content */
 .content {
+  width: 50%;
+  height: 100%;
   display: flex;
   justify-content: left;
   align-items: center;
   flex-direction: column;
-  width: 50%;
-  height: 100%;
 }
 
 .content-form{
-  box-shadow: 0 0 5px 1px rgba(1 1 1/15%);
-  padding: 20px;
-  height: 100%;
   width: 400px;
+  height: 100%;
+  padding: 20px;
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   margin-bottom: 70px;
   border-radius: 20px;
+  box-shadow: 0 0 5px 1px rgba(1 1 1/15%);
 }
 
 .content-form .img-profile {
@@ -121,11 +94,11 @@ body {
 
 
 .content-form .img-profile img{
-  width: 100px ;
+  width: 100px;
   height: 100px;
   border-radius: 50px;
-  box-shadow: 0 0 10px 5px rgba(1 1 1/15%);
   padding: 10px;
+  box-shadow: 0 0 10px 5px rgba(1 1 1/15%);
 }
 
 .content-form ul {
@@ -139,11 +112,11 @@ body {
 .content-form ul li {
   width: 100%;
   height: 100%;
-  border: solid 1px #eee;
   margin: 10px;
   padding: 10px 20px;
   text-align: right;
   border-radius: 10px;
+  border: solid 1px #eee;
   box-shadow: 0px 0px 5px 1px rgba(1 1 1/8%);
 }
 

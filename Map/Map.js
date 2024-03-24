@@ -15,11 +15,25 @@ async function initMap() {
   new google.maps.Marker({
     position: {lat : 24.85347934171513, lng : 46.72581740734896},
     map,
-    label: "P"
+    label: "P",
   })
 
   new google.maps.Marker({
     position: {lat:24.853907689370406, lng:46.71002456126437},
+    map,
+    label: "P"
+  })
+
+
+
+  new google.maps.Marker({
+    position: {lat:24.723285822712835, lng:46.61441964763554},
+    map,
+    label: "P"
+  })
+
+  new google.maps.Marker({
+    position: {lat:24.850061223568407, lng:46.71421026134136},
     map,
     label: "P"
   })
