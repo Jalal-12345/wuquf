@@ -144,6 +144,10 @@ function ShowProfile(){
     document.querySelector(".right-Header").innerHTML = `
     <a href="../Profile/Profile.html"><img src="../Image/Profile.png" alt=""></a>
     `
+     document.querySelector(".text-Home").innerHTML = `
+     <h1>اكتشاف مواقف السيارات القريبة والمتاحة</h1>
+     <a href="../Map/Map.html">إبدأ الآن</a>
+    `
   }else{
     document.querySelector("..right-Header").innerHTML = `
     <a href="../Login and register/Login.html" class="active">تسجيل الدخول</a>
