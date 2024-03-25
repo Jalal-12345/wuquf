@@ -1,5 +1,10 @@
 
 /* Global */
+:root{
+  --color-main: #fff;
+  --bg-main: linear-gradient(#8779a4, #9e6b8b);
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -80,7 +85,7 @@ body{
   font-weight: bold;
   text-align: right;
   margin: 20px 0px;
-  background: linear-gradient(#9e6b8b,#8779a4);
+  background: var(--bg-main);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

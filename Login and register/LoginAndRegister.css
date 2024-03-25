@@ -1,4 +1,9 @@
 /* Global */
+:root{
+  --color-main: #fff;
+  --bg-main: linear-gradient(#8779a4, #9e6b8b);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +31,7 @@ body {
   padding: 50px;
   text-align: right;
   overflow: auto; 
-  background: #fff;
+  background: var(--color-main);
   box-shadow: 0 0 25px 5px rgba(1 1 1/15%);
 }
 
@@ -38,7 +43,7 @@ body {
 .title-From h1 {
   font-size: 50px;
   font-weight: 700;
-  background: linear-gradient(#8779a4, #9e6b8b);
+  background: var(--bg-main);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -151,7 +156,7 @@ body {
 
 .Form-continer h4 a {
   text-decoration: none;
-  background: linear-gradient(#8779a4, #9e6b8b);
+  background: var(--bg-main);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -188,7 +193,6 @@ body {
     display: flex;
     justify-content: right;
     align-items: center;
-    background: linear-gradient(#8779a4, #9e6b8b);
   }
   .Form-continer {
     width: 100%;
@@ -211,7 +215,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fff;
+    background: var(--color-main);
   }
   .Form-continer {
     width: 100%;

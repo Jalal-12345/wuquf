@@ -1,4 +1,8 @@
 /* Global */
+:root{
+  --color-main: #fff;
+  --bg-main: linear-gradient(#8779a4, #9e6b8b);
+}
 
 *{
   margin: 0;
@@ -43,7 +47,7 @@ body{
 .AboutUS .info-About h1 {
   font-size: 90px;
   margin-bottom: 30px;
-  background: linear-gradient(#8779a4, #9e6b8b);
+  background: var(--bg-main);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -64,7 +68,7 @@ body{
   display: flex;
   justify-content: center;
   padding: 20px;
-  background: linear-gradient(#8779a4,#9e6b8b);
+  background: var(--bg-main);
 }
 
 .project-goals{
@@ -73,7 +77,7 @@ body{
 
 .Goals .title-goal{
   text-align: center;
-  color: #fff;
+  color: var(--color-main);
   font-size: 60px;
   margin-bottom: 50px;
 }
@@ -89,7 +93,7 @@ body{
 
 .Goals .priject-card-goals .card{
   width: 300px;
-  background: #fff;
+  background: var(--color-main);
   margin: 15px;
   padding: 30px;
   text-align: right;
@@ -141,7 +145,7 @@ body{
 .virson .project-virson-card .card-virson h1 {
   font-weight: 400;
   margin-bottom: 10px;
-  background: linear-gradient(#8779a4, #9e6b8b);
+  background: var(--bg-main);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -156,7 +160,7 @@ footer{
   align-items: center;
   flex-direction: column;
   padding: 80px 40px;
-  background: linear-gradient(#8779a4,#9e6b8b);
+  background: var(--bg-main);
 }
 
 
@@ -169,7 +173,7 @@ footer{
 }
 
 .project-footer .card-footer{
-  color: #fff;
+  color: var(--color-main);
 }
 
 .project-footer .card-footer h4{
@@ -180,7 +184,7 @@ footer{
 }
 
 .project-footer .card-footer h4 a {
-  color: #fff;
+  color: var(--color-main);
  }
 
  .project-footer .card-footer i {
@@ -191,7 +195,7 @@ footer{
 
  footer h3{
   margin-top: 80px;
-  color: #fff;
+  color: var(--color-main);
   font-weight: 500;
 }
 

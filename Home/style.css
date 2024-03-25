@@ -1,4 +1,10 @@
 /* Global */
+:root{
+  --color-main: #fff;
+  --bg-main: linear-gradient(#8779a4, #9e6b8b);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +13,7 @@
 
 }
 html{
-  background: linear-gradient(#8779a4,#9e6b8b);
+  background: var(--bg-main);
 }
 body {
   width: 100%;
@@ -63,13 +69,13 @@ header{
 .text-Home h1{
   width: 100%;
   font-size: 40px;
-  color: #fff;
+  color: var(--color-main);
   text-align: center;
 }
 
 .text-Home a {
   width: 250px;
-  background: #fff;
+  background: var(--color-main);
   color: #8779a4;
   margin-top: 30px;
   padding: 10px 40px;
