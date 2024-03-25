@@ -110,11 +110,12 @@
 
   .post-parking .info-post-parking{
     width: 100%;
+    justify-content: center;
   }
 
 
   .post-parking .info-post-parking .Form-continer{
-    width: 80%;
+    width: 100%;
   }
 }
 

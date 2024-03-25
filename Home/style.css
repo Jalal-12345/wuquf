@@ -91,6 +91,7 @@ header{
   .Home{
     flex-direction: column;
     width: 100%;
+    padding: 0px 30px;
   }
 
 
@@ -117,7 +118,7 @@ header{
   }
 
   .Home .img img{
-    width: 100%;
+    width: max-content;
     height: 100%;
     margin-bottom: 0px;
   }
