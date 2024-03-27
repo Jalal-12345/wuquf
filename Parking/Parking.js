@@ -14,9 +14,11 @@ TitlePark.innerHTML = `
 // عند الضغط الزر يوديه تعبئة معلومات
 document.querySelectorAll(" td > button").forEach(item=>{
    item.addEventListener("click",(e)=>{
-    postLocation(e.target.innerText)
+     postLocation(e.target.innerText);
    })
 })
+
+
 
 // post url numPark
 function postLocation(numPark){

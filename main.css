@@ -1,4 +1,10 @@
-
+:root{
+  --color-main: #fff;
+  --bg-main: linear-gradient(#8779a4, #9e6b8b);
+  --size-small:10px;
+  --size-Medium:20px;
+  --size-large:30px;
+}
 
 /* Global */
 *{
@@ -15,7 +21,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 60px;
+  padding: var(--size-small) ;
   background: linear-gradient(90deg, #9e6b8b, #8779a4);
 }
 
@@ -34,27 +40,27 @@ ul {
 }
 
 .right-Header img {
-  width: 40px;
-  height: 40px;
+  width: calc(var(--size-large) + 10px);
+  height: calc(var(--size-large) + 10px );
 }
 
 .active {
   font-weight: bold;
-  color: #fff;
-  font-size: 25px;
+  color: var(--color-main);
+  font-size: calc(var(--size-Medium) + 5px);
 }
 
 .titleWebsite {
   display: flex;
   align-items: center;
-  font-size: 20px;
-  margin-left: 40px;
-  color: #fff;
+  font-size: var(--size-Medium);
+  margin-left: calc(var(--size-large) + 10px);
+  color: var(--color-main);
 }
 
 .titleWebsite img {
-  width: 100px;
-  height: 50px;
+  width: calc(var(--size-Medium) * 5);
+  height: calc(var(--size-small) * 5);
 }
 
 .navbar {
@@ -63,7 +69,7 @@ ul {
   justify-content: space-around;
   align-items: center;
   flex-direction: row-reverse;
-  padding: 20px;
+  padding: var(--size-Medium);
   color: whitesmoke;
 }
 
@@ -73,12 +79,12 @@ ul {
 }
 
 .nav-links li {
-  margin: 0 20px;
+  margin: 0 var(--size-Medium);
 }
 
 .nav-links li a {
   color: #fff;
-  font-size: 20px;
+  font-size: var(--size-Medium);
   transition: 0.9s;
 }
 
@@ -97,14 +103,14 @@ ul {
 
 #menu {
   color: whitesmoke;
-  font-size: 24px;
+  font-size: calc(var(--size-Medium) + 4px);
   display: none;
 }
 
 .MENU-Mobile {
   width: 300px;
   height: 100%;
-  background: #fff;
+  background: var(--color-main);
   position: fixed;
   top: 0;
   right: 0;
@@ -126,35 +132,35 @@ ul {
 }
 
 .navbar-Mobile h1 {
-  font-size: 50px;
+  font-size: calc(var(--size-small)*5);
   text-align: center;
-  background: linear-gradient(#8779a4, #9e6b8b);
+  background: var(--bg-main);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .navbar-Mobile ul {
   width: 100%;
-  margin-top: 20px;
+  margin-top: var(--size-Medium);
 }
 
 .navbar-Mobile ul li {
   width: 100%;
-  margin: 30px 0px;
-  padding: 10px 20px;
+  margin: var(--size-large) 0px;
+  padding: var(--size-small) var(--size-Medium);
   border-bottom: solid #9e6b8b;
   text-align: end;
 }
 
 .navbar-Mobile ul li a {
-  font-size: 20px;
+  font-size: var(--size-Medium);
 }
 
 #close {
   position: absolute;
   top: 1rem;
   right: 2rem;
-  font-size: 20px;
+  font-size: var(--size-Medium);
   cursor: pointer;
 }
 
@@ -164,10 +170,10 @@ ul {
   width: 200px;
   position: absolute;
   display: none;
-  margin-top: 23px;
-  padding: 10px;
-  border-radius: 10px;
-  background: #fff;
+  margin-top: calc(var(--size-Medium) + 3px);
+  padding: var(--size-small);
+  border-radius: var(--size-small); 
+  background: var(--color-main);
   box-shadow: 0px 0px 25px 15px rgba(1 1 1/15%);
 }
 
@@ -181,8 +187,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5px 0;
-  padding: 3px;
+  margin: calc(var(--size-small) - 5px) 0;
+  padding: calc(var(--size-small) - 7px);
 }
 
 .DrowDawnMaps ul li:hover {
@@ -191,7 +197,7 @@ ul {
 
 .DrowDawnMaps ul li a {
   color: #000;
-  font-size: 15px;
+  font-size: calc(var(--size-small) + 5px);
 }
 
 /* -- Headers Mobile -- */
@@ -205,8 +211,8 @@ ul {
 
   .logo {
     position: absolute;
-    top: 30px;
-    left: 30px;
+    top: var(--size-large);
+    left: var(--size-large);
   }
   .nav-links {
     width: 100%;
@@ -217,7 +223,7 @@ ul {
     display: none;
   }
   .nav-links li {
-    margin: 30px;
+    margin: var(--size-large);
   }
    
   header{
@@ -226,7 +232,7 @@ ul {
   }
 
   .active{
-    font-size: 20px;
+    font-size: var(--size-Medium);
   }
 }
 

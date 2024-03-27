@@ -48,3 +48,22 @@ function ClickedPost(NamePark){
   location = `../Parking/Parking.html?NamePark=${NamePark}`
   console.log(NamePark);
 }
+
+// Save
+
+let saved = document.querySelector(".saved");
+
+saved.addEventListener("click", ()=>{
+
+  if(saved.style.background = "#fbfbfb"){
+    saved.style.background = "#8779a4";
+    document.querySelector(".saved > i").style.color = "#fff";
+    document.querySelector(".resultMaps ul").innerHTML = `
+    <li><a href="#" onclick="ClickedPost(this.dataset.college)" data-college="أكاديمية طويق"><strong>أكاديمية  طويق</strong> <img src="../Image/Parking.png" alt=""></a></li>
+    `
+    console.log("HI");
+  }else if(saved.style.background == "#8779a4"){
+    console.log("hello");
+  }
+    
+})

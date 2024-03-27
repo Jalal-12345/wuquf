@@ -2,6 +2,9 @@
 :root{
   --color-main: #fff;
   --bg-main: linear-gradient(#8779a4, #9e6b8b);
+  --size-small:10px;
+  --size-Medium:20px;
+  --size-large:30px;
 }
 
 
@@ -40,7 +43,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 40px;
+  padding: var(--size-Medium) calc(var(--size-large) + 10px);
 }
 
 
@@ -55,7 +58,7 @@ header{
 .Home .img img {
   width: 80%;
   height: 100%;
-  margin-bottom: 70px ;
+  margin-bottom: calc(var(--size-small) * 7) ;
 }
 
 .text-Home{
@@ -68,7 +71,7 @@ header{
 
 .text-Home h1{
   width: 100%;
-  font-size: 40px;
+  font-size: calc(var(--size-large) + 10px);
   color: var(--color-main);
   text-align: center;
 }
@@ -77,12 +80,17 @@ header{
   width: 250px;
   background: var(--color-main);
   color: #8779a4;
-  margin-top: 30px;
-  padding: 10px 40px;
-  border-radius: 20px;
-  font-size: 20px;
+  margin-top: var(--size-large);
+  padding: var(--size-small) calc(var(--size-large) + 10px);
+  border-radius: var(--size-Medium);
+  font-size: var(--size-Medium);
   font-weight: 700;
   text-align: center;
+  transition: 0.5s;
+}
+
+.text-Home a:hover{
+  background:  rgba(225 225 225 );
 }
 
 /* -- Section -- */
@@ -97,7 +105,7 @@ header{
   .Home{
     flex-direction: column;
     width: 100%;
-    padding: 0px 30px;
+    padding: 0px var(--size-large);
   }
 
 
@@ -111,11 +119,11 @@ header{
   .text-Home h1{
     width: 100%;
     text-align: center;
-    font-size: 20px;
+    font-size: var(--size-Medium);
   }
 
   .text-Home a {
-    font-size: 10px;
+    font-size: var(--size-small);
   }
 
   .Home .img{

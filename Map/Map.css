@@ -1,5 +1,11 @@
 /* Global */
-
+:root{
+  --color-main: #fff;
+  --bg-main: linear-gradient(#8779a4, #9e6b8b);
+  --size-small:10px;
+  --size-Medium:20px;
+  --size-large:30px;
+}
 
 * {
   margin: 0px;
@@ -17,9 +23,9 @@ body {
   width: 80%;
   height: 70vh;
   display: flex;
-  padding: 15px 20px;
-  margin: 20px auto;
-  border-radius: 20px;
+  padding: calc(var(--size-small) + 5px) var(--size-Medium);
+  margin: var(--size-Medium) auto;
+  border-radius: var(--size-Medium);
   box-shadow: 0 0px 9px 5px rgba(1 1 1/8%);
 }
 
@@ -27,13 +33,13 @@ body {
 #Maps {
   width: 75%;
   height: 100%;
-  border-radius: 15px;
+  border-radius: calc(var(--size-small) + 5px);
 }
 
 /* Form Maps */
 
 .FormMaps {
-  margin: 0px 10px;
+  margin: 0px var(--size-small);
 }
 
 .SearchMaps {
@@ -49,9 +55,9 @@ body {
 
 .input-group input {
   width: 100%;
-  padding: 10px;
-  padding-right: 60px;
-  border-radius: 10px;
+  padding: var(--size-small);
+  padding-right: calc(var(--size-large) * 2);
+  border-radius: var(--size-small);
   border: none;
   text-align: right;
   background: #fbfbfb;
@@ -62,7 +68,7 @@ body {
   position: absolute;
   top: 0;
   right: 0px;
-  width: 60px;
+  width: calc(var(--size-large) * 2);
   height: 100%;
   display: flex;
   justify-content: center;
@@ -75,10 +81,10 @@ body {
 }
 
 .saved {
-  padding: 10px 15px;
+  padding: var(--size-small) calc(var(--size-small) + 5px);
   background: #fbfbfb;
-  border-radius: 10px;
-  margin: 0px 10px;
+  border-radius: var(--size-small);
+  margin: 0px var(--size-small);
   cursor: pointer;
 }
 
@@ -100,9 +106,9 @@ body {
 
 .resultMaps ul li {
   width: 90%;
-  margin: 20px auto;
-  padding: 10px;
-  border-radius: 10px;
+  margin: var(--size-Medium) auto;
+  padding: var(--size-small);
+  border-radius: var(--size-small);
   text-align: left;
   box-shadow: 1px 0px 5px 1px rgba(1 1 1/10%);
 }
@@ -119,9 +125,9 @@ body {
 }
 
 .resultMaps ul li a img {
-  width: 30px;
-  height: 30px;
-  margin-left: 10px;
+  width: var(--size-large);
+  height: var(--size-large);
+  margin-left: var(--size-small);
 }
 
 /* -- Form Maps -- */
@@ -132,8 +138,14 @@ body {
   body {
     overflow: auto;
   }
+
+
   .MapsContiner {
     flex-direction: column;
+  }
+
+  #Maps{
+    display: none;
   }
 
   .FormMaps {

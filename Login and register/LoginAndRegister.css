@@ -2,6 +2,9 @@
 :root{
   --color-main: #fff;
   --bg-main: linear-gradient(#8779a4, #9e6b8b);
+  --size-small:10px;
+  --size-Medium:20px;
+  --size-large:30px;
 }
 
 * {
@@ -28,7 +31,7 @@ body {
 .Form-continer {
   width: 50%;
   height: 100%;
-  padding: 50px;
+  padding: calc(var(--size-small) * 5);
   text-align: right;
   overflow: auto; 
   background: var(--color-main);
@@ -37,11 +40,11 @@ body {
 
 /* TITLE FORM */
 .title-From {
-  margin: 20px 0px;
+  margin: var(--size-Medium) 0px;
 }
 
 .title-From h1 {
-  font-size: 50px;
+  font-size: calc(var(--size-small) * 5);
   font-weight: 700;
   background: var(--bg-main);
   -webkit-background-clip: text;
@@ -49,9 +52,9 @@ body {
 }
 
 .title-From p {
-  font-size: 20px;
+  font-size: var(--size-Medium);
   font-weight: 300;
-  margin: 10px 0px;
+  margin: var(--size-small) 0px;
 }
 
 /* -- TITLE FORM -- */
@@ -59,7 +62,7 @@ body {
 /* INPUT FORM */
 .input {
   width: 100%;
-  margin: 10px 0px;
+  margin: var(--size-small) 0px;
 }
 
 
@@ -72,14 +75,14 @@ body {
 
 .input .input-group input {
   width: 100%;
-  padding: 10px;
-  padding-right: 60px;
-  border-radius: 10px;
+  padding: var(--size-small);
+  padding-right: calc(var(--size-large) * 2);
+  border-radius: var(--size-small);
   border: none;
   border: solid 2px #eee;
   text-align: right;
-  margin-top: 5px;
-  font-size: 18px;
+  margin-top: calc(var(--size-small) - 5px);
+  font-size: calc(var(--size-Medium) - 2px);
   outline: 0;
 }
 
@@ -87,7 +90,7 @@ body {
   position: absolute;
   top: 0;
   right: 0px;
-  width: 60px;
+  width: calc(var(--size-large) * 2);
   height: 100%;
   display: flex;
   justify-content: center;
@@ -111,9 +114,9 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100% ;
-  margin: 10px 0px;
-  padding: 10px 20px;
-  border-radius: 10px;
+  margin: var(--size-small) 0px;
+  padding: var(--size-small) var(--size-Medium);
+  border-radius: var(--size-small);
   margin: 3px 4px;
   box-shadow: 0px 0px 1px 1px rgba(1 1 1/15%);
 }
@@ -128,7 +131,7 @@ body {
 
 
 .input .radio{
-  border: solid #8779a4 1px;
+  border: solid #eee 1px;
 }
 
 /* -- Option -- */
@@ -139,18 +142,24 @@ body {
 
 #submit {
   width: 100%;
-  margin-top: 40px;
-  padding: 10px 20px;
-  border-radius: 20px;
+  margin-top: calc(var(--size-large) + 10px);
+  padding: var(--size-small) var(--size-Medium);
+  border-radius: var(--size-Medium);
   border: none;
-  color: #fff;
-  font-size: 20px;
+  color: var(--color-main);
+  font-size: var(--size-Medium);
   cursor: pointer;
   background: linear-gradient(#8779a4, #9e6b8b);
+  transition:  0.5s;
+}
+
+#submit:hover{
+  background: linear-gradient(290deg,#8779a4, #9e6b8b);
+  letter-spacing: 4px;
 }
 
 .Form-continer h4 {
-  margin: 50px 0px;
+  margin: calc(var(--size-small) * 5) 0px;
   text-align: center;
 }
 
@@ -186,28 +195,6 @@ body {
 
 /* response */
 
-@media (max-width: 885px) {
-  body {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-  }
-  .Form-continer {
-    width: 100%;
-    height: 100%;
-    padding: 40px 40px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .img-login{
-    display: none;
-  }
-
-}
-
 @media (max-width: 750px){
   body {
     width: 100%;
@@ -220,7 +207,7 @@ body {
   .Form-continer {
     width: 100%;
     height: 100%;
-    padding: 40px 40px;
+    padding:calc(var(--size-large) + 10px);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -228,7 +215,7 @@ body {
   }
 
   .Form-continer h1{
-    font-size: 30px;
+    font-size: var(--size-large);
   }
 
   .img-login{

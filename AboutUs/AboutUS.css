@@ -2,6 +2,9 @@
 :root{
   --color-main: #fff;
   --bg-main: linear-gradient(#8779a4, #9e6b8b);
+  --size-small:10px;
+  --size-Medium:20px;
+  --size-large:30px;
 }
 
 *{
@@ -15,6 +18,8 @@ body{
   overflow-x: hidden;
 }
 
+
+
 /* Section About us */
 
 .AboutUS{
@@ -22,7 +27,7 @@ body{
   justify-content: space-between;
   align-items: center;
   height: calc(100vh-56);
-  padding: 60px;
+  padding: calc(var(--size-large)*2);
 }
 
 .AboutUS div{
@@ -30,7 +35,7 @@ body{
 }
 
 .AboutUS .img-About{
-  margin-top: 30px;
+  margin-top: var(--size-large);
 }
 
 .AboutUS .img-About img{
@@ -40,13 +45,13 @@ body{
 
 .AboutUS .info-About {
   text-align: right;
-  margin: 0px 20px;
+  margin: 0px var(--size-Medium);
 }
 
 
 .AboutUS .info-About h1 {
-  font-size: 90px;
-  margin-bottom: 30px;
+  font-size: calc(var(--size-large) * 3);
+  margin-bottom: var(--size-large);
   background: var(--bg-main);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -54,7 +59,7 @@ body{
 
 
 .AboutUS .info-About p{
-  font-size: 20px;
+  font-size: var(--size-Medium);
   font-weight: 500;
 }
 
@@ -67,19 +72,19 @@ body{
 .Goals{
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: var(--size-Medium);
   background: var(--bg-main);
 }
 
 .project-goals{
-  padding: 30px;
+  padding: var(--size-large);
 }
 
 .Goals .title-goal{
   text-align: center;
   color: var(--color-main);
-  font-size: 60px;
-  margin-bottom: 50px;
+  font-size: calc(var(--size-large)*2);
+  margin-bottom: calc(var(--size-large) + 20px);
 }
 
 
@@ -94,10 +99,10 @@ body{
 .Goals .priject-card-goals .card{
   width: 300px;
   background: var(--color-main);
-  margin: 15px;
-  padding: 30px;
+  margin: calc(var(--size-small) + 5px);
+  padding: var(--size-large);
   text-align: right;
-  border-radius: 20px;
+  border-radius: var(--size-Medium);
   transition: 0.5s;
 }
 
@@ -117,7 +122,7 @@ body{
 
 .virson .project-virson{
   width: 100%;
-  padding: 60px 0px;
+  padding: calc(var(--size-large) * 2) 0px;
 }
 
 .virson .project-virson-card{
@@ -130,10 +135,10 @@ body{
 
 .virson .project-virson-card .card-virson{
   width: 400px;
-  margin: 15px;
-  padding: 10px;
-  font-size: 13px;
-  border-radius: 10px;
+  margin: calc(var(--size-small) + 5px);
+  padding: var(--size-small);
+  font-size: calc(var(--size-small) + 3px);
+  border-radius: var(--size-small);
   transition: 0.5s;
 }
 
@@ -144,7 +149,7 @@ body{
 
 .virson .project-virson-card .card-virson h1 {
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: var(--size-small);
   background: var(--bg-main);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -159,7 +164,7 @@ footer{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 80px 40px;
+  padding: calc(var(--size-Medium) * 4) calc(var(--size-large) + 10px);
   background: var(--bg-main);
 }
 
@@ -169,7 +174,7 @@ footer{
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-top: 80px;
+  margin-top: calc(var(--size-Medium) * 4);
 }
 
 .project-footer .card-footer{
@@ -180,7 +185,7 @@ footer{
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 20px;
+  font-size: var(--size-Medium);
 }
 
 .project-footer .card-footer h4 a {
@@ -188,13 +193,13 @@ footer{
  }
 
  .project-footer .card-footer i {
-  font-size: 20px;
-  margin: 0px 5px;
+  font-size: var(--size-Medium);
+  margin: 0px calc(var(--size-small) - 5px);
   cursor: pointer;
  }
 
  footer h3{
-  margin-top: 80px;
+  margin-top: calc(var(--size-Medium) * 4);
   color: var(--color-main);
   font-weight: 500;
 }
@@ -213,15 +218,15 @@ footer{
   }
 
   .AboutUS .info-About h1{
-    font-size: 40px;
+    font-size: calc(var(--size-large) + 10px);
   }
 
   .Goals .title-goal{
-    font-size: 40px;
+    font-size: calc(var(--size-large) + 10px);
   }
 
   footer{
-    padding: 20px 20px;
+    padding: var(--size-Medium);
   }
 
   .project-footer{
@@ -230,7 +235,7 @@ footer{
   }
 
   .card-footer{
-    margin: 20px auto;
+    margin: var(--size-Medium) auto;
   }
 
   footer h3{
