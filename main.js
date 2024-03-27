@@ -1,27 +1,6 @@
-
-const namePerson = document.getElementById("name");
-const number = document.getElementById("number");
-const email = document.getElementById("email");
-const password = document.getElementById("password");
-const radio = document.querySelectorAll(".radio");
-const NationalityRegister = document.getElementById("NationalityRegister")
-const CityLogin = document.getElementById("CityLogin");
-let Checked;
-radio.forEach(item=>{
-  item.addEventListener("click", ()=>{
-    register(item.innerText)
-    Checked = item.innerText;
-  })
-})
-
-
-const EmailLogin = document.getElementById("Email");
-const PasswordLogin = document.getElementById("Password");
-
-
 // abbreviation Header
 
-document.querySelectorAll(".primary-Header").forEach(item=> { 
+document.querySelectorAll(".primary-Header").forEach(item=>{ 
   item.innerHTML = `
   <!-- nav bar -->  
   <header>
@@ -101,6 +80,20 @@ function DrowDawnOut(){
 
 
 
+const namePerson = document.getElementById("name");
+const number = document.getElementById("number");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
+const radio = document.querySelectorAll(".radio");
+const NationalityRegister = document.getElementById("NationalityRegister")
+const CityLogin = document.getElementById("CityLogin");
+let Checked;
+radio.forEach(item=>{
+  item.addEventListener("click", ()=>{
+    register(item.innerText)
+    Checked = item.innerText;
+  })
+})
 
 
 // register
@@ -119,6 +112,11 @@ const info_json = JSON.stringify(info);
  localStorage.setItem("info-person" , info_json)
  localStorage.setItem("login", "on");
 }
+
+
+const EmailLogin = document.getElementById("Email");
+const PasswordLogin = document.getElementById("Password");
+
 
 // Login
 
